@@ -1,10 +1,29 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = 'cards';
+  posts = [
+    {
+      title: "Neat Tree",
+      username: "nature",
+      content: "I saw this neat tree today",
+      imageUrl: "assets/tree.jpeg",
+    },
+    {
+      title: "Snowy Mountain",
+      username: "mountainlover",
+      content: "Here is a picture of a snowy mountain",
+      imageUrl: "assets/mountain.jpeg",
+    },
+    {
+      title: "Mountain Biking",
+      username: "biking1232",
+      content: "I did some biking today",
+      imageUrl: "assets/biking.jpeg",
+    },
+  ];
 }
